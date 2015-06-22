@@ -88,6 +88,7 @@ set shiftwidth=4
 set softtabstop=4
 
 set hidden
+colorscheme Tomorrow-Night
 
 " 80 chars/line
 set textwidth=0
