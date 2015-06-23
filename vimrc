@@ -2,44 +2,44 @@ call plug#begin('~/.vim/plugged')
 " PLUGINS
 	" basic
 Plug 'Lokaltog/vim-easymotion'
-Plug 'tpope/vim-sensible'
 Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-sensible'
 	" appearance 
 Plug 'bling/vim-airline'
 Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'tomasr/molokai'
 Plug 'scrooloose/syntastic'
+Plug 'tomasr/molokai'
 	" edit
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree',			{ 'on': 'UndotreeToggle' }
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 	" browsing
-Plug 'Yggdroot/indentLine'
-Plug 'scrooloose/nerdtree',		{ 'on': 'NERDTreeToggle' }
-Plug 'justinmk/vim-gtfo'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'justinmk/vim-gtfo'
+Plug 'scrooloose/nerdtree',		{ 'on': 'NERDTreeToggle' }
+Plug 'Yggdroot/indentLine'
 	" git
-Plug 'tpope/vim-fugitive'
-Plug 'gregsexton/gitv',			{ 'on': 'Gitv' }
 Plug 'airblade/vim-gitgutter'
+Plug 'gregsexton/gitv',			{ 'on': 'Gitv' }
+Plug 'tpope/vim-fugitive'
 	" lang
+Plug 'digitaltoad/vim-jade'
 Plug 'fatih/vim-go'
-Plug 'vim-ruby/vim-ruby'
+Plug 'groenewege/vim-less'
+Plug 'honza/dockerfile.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'klen/python-mode',			{ 'for': 'python'  }
 Plug 'VimClojure',					{ 'for': 'clojure' }
 Plug 'tpope/vim-fireplace',			{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-static',		{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight',	{ 'for': 'clojure' }
 Plug 'kovisoft/paredit',			{ 'for': 'clojure' }
-Plug 'groenewege/vim-less'
 Plug 'pangloss/vim-javascript'
-Plug 'kchmck/vim-coffee-script'
-Plug 'honza/dockerfile.vim'
-Plug 'klen/python-mode'
-Plug 'digitaltoad/vim-jade'
+Plug 'vim-ruby/vim-ruby'
 	" others
+Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim',				{ 'for': 'html' }
 Plug 'thinca/vim-quickrun'
-Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
