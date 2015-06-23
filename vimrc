@@ -17,6 +17,7 @@ Plug 'mbbill/undotree',			{ 'on': 'UndotreeToggle' }
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree',		{ 'on': 'NERDTreeToggle' }
 Plug 'justinmk/vim-gtfo'
+Plug 'ctrlpvim/ctrlp.vim'
 	" git
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv',			{ 'on': 'Gitv' }
@@ -24,6 +25,7 @@ Plug 'airblade/vim-gitgutter'
 	" lang
 Plug 'fatih/vim-go'
 Plug 'vim-ruby/vim-ruby'
+Plug 'VimClojure',					{ 'for': 'clojure' }
 Plug 'tpope/vim-fireplace',			{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-static',		{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight',	{ 'for': 'clojure' }
@@ -34,6 +36,11 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'honza/dockerfile.vim'
 Plug 'klen/python-mode'
 Plug 'digitaltoad/vim-jade'
+	" others
+Plug 'mattn/emmet-vim',				{ 'for': 'html' }
+Plug 'thinca/vim-quickrun'
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 " KEYBINDINGS
@@ -82,6 +89,8 @@ set nu
 set autoindent
 set smartindent
 set showcmd
+set incsearch
+set hlsearch
 
 set tabstop=4
 set shiftwidth=4
