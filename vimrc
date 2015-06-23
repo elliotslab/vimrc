@@ -1,9 +1,12 @@
 call plug#begin('~/.vim/plugged')
 " PLUGINS
 	" basic
+Plug 'ervandew/supertab'
+Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
+Plug 'Valloric/YouCompleteMe'
 	" appearance 
 Plug 'bling/vim-airline'
 Plug 'chriskempson/vim-tomorrow-theme'
@@ -71,7 +74,7 @@ nnoremap <Leader>g :Gstatus<cr>gg<c-n>
 nnoremap <Leader>d :Gdiff<cr>
 
 	" indentLine
-let g:indentLine_enabled =1
+let g:indentLine_enabled=1
 
 	" undotree
 let g:undotree_WindowLayout =2
@@ -82,6 +85,16 @@ augroup lisp
 	autocmd FileType lisp.clojure.scheme RainbowParentheses
 augroup END
 let g:paredit_smartjump =1
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " BASIC SETTINGS
 
