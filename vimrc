@@ -22,7 +22,6 @@ Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'justinmk/vim-gtfo'
 Plug 'scrooloose/nerdtree',		{ 'on': 'NERDTreeToggle' }
-Plug 'Yggdroot/indentLine'
 	" git
 Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv',			{ 'on': 'Gitv' }
