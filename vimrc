@@ -9,6 +9,7 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
 Plug 'Valloric/YouCompleteMe'
+Plug 'mhinz/vim-startify'
 	" appearance 
 Plug 'bling/vim-airline'
 Plug 'chriskempson/vim-tomorrow-theme'
