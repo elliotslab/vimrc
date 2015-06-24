@@ -1,4 +1,6 @@
 call plug#begin('~/.vim/plugged')
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
 	" basic
 Plug 'ervandew/supertab'
@@ -46,6 +48,38 @@ Plug 'thinca/vim-quickrun'
 
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BASIC SETTINGS
+
+set nu
+set autoindent
+set smartindent
+set showcmd
+set incsearch
+set hlsearch
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+set hidden
+colorscheme Tomorrow-Night
+
+" 80 chars/line
+set textwidth=0
+if exists('&colorcolumn')
+	set colorcolumn=80
+endif
+
+" open at close line
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" 256 colors
+set t_Co=256
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " KEYBINDINGS
 let mapleader		= ' '
 let maplocalleader	= ' '
@@ -61,6 +95,13 @@ nnoremap <Leader>p :bp<cr>
 
 nnoremap <silent> <C-k> :move-2<cr>
 nnoremap <silent> <C-j> :move+<cr>
+
+nnoremap <Leader>e $
+nnoremap <Leader>s 0
+
+imap hh <C-y>,
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " PLUGIN SETTINGS
 	" nerdtree
 let NERDTreeQuitOnOpen=1
@@ -96,32 +137,6 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-" BASIC SETTINGS
-
-set nu
-set autoindent
-set smartindent
-set showcmd
-set incsearch
-set hlsearch
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-
-set hidden
-colorscheme Tomorrow-Night
-
-" 80 chars/line
-set textwidth=0
-if exists('&colorcolumn')
-	set colorcolumn=80
-endif
-
-" open at close line
-if has("autocmd")
-	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-
-" 256 colors
-set t_Co=256
+" emmet
+let g:user_emmet_install_global=0
+autocmd FileType html,css EmmetInstall
