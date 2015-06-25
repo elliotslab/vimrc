@@ -99,7 +99,7 @@ nnoremap <silent> <C-j> :move+<cr>
 nnoremap <Leader>e $
 nnoremap <Leader>s 0
 
-imap hh <C-y>,
+imap hh <C-y>,<ESC>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " PLUGIN SETTINGS
