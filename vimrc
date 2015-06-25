@@ -28,19 +28,19 @@ Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv',			{ 'on': 'Gitv' }
 Plug 'tpope/vim-fugitive'
 	" lang
-Plug 'digitaltoad/vim-jade'
-Plug 'fatih/vim-go'
-Plug 'groenewege/vim-less'
-Plug 'honza/dockerfile.vim'
-Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade',		{ 'for': 'jade' }
+Plug 'fatih/vim-go',				{ 'for': 'go' }
+Plug 'groenewege/vim-less',			{ 'for': 'less' }
+Plug 'honza/dockerfile.vim',		{ 'for': 'dockerfile' }
+Plug 'kchmck/vim-coffee-script',	{ 'for': 'coffee' }
 Plug 'klen/python-mode',			{ 'for': 'python'  }
 Plug 'VimClojure',					{ 'for': 'clojure' }
 Plug 'tpope/vim-fireplace',			{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-static',		{ 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight',	{ 'for': 'clojure' }
 Plug 'kovisoft/paredit',			{ 'for': 'clojure' }
-Plug 'pangloss/vim-javascript'
-Plug 'vim-ruby/vim-ruby'
+Plug 'pangloss/vim-javascript',		{ 'for': 'javascript' }
+Plug 'vim-ruby/vim-ruby',			{ 'for': 'ruby' }
 	" others
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim',				{ 'for': 'html' }
