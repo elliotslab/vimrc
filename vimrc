@@ -8,7 +8,7 @@ Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'mhinz/vim-startify'
 	" appearance 
 Plug 'bling/vim-airline'
