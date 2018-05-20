@@ -8,7 +8,6 @@ Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
-"Plug 'Valloric/YouCompleteMe'
 Plug 'mhinz/vim-startify'
 	" appearance 
 Plug 'bling/vim-airline'
@@ -72,7 +71,7 @@ if exists('&colorcolumn')
 	set colorcolumn=80
 endif
 
-" open at close line
+" open on last cursor line
 if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
@@ -84,14 +83,15 @@ set t_Co=256
 " KEYBINDINGS
 let mapleader		= ' '
 let maplocalleader	= ' '
+imap jj <Esc>
 
-nnoremap <C-e> :NERDTreeToggle<cr>
+nnoremap jn :NERDTreeToggle<cr>
 nnoremap U :UndotreeToggle<cr>
 
 nnoremap <Leader><tab> :bn<cr>
 nnoremap <Leader>t :enew<cr>
-nnoremap <Leader>w :bw<cr>
 nnoremap <Leader>l :bn<cr>
+nnoremap <Leader>w :bw<cr>
 nnoremap <Leader>p :bp<cr>
 
 nnoremap <silent> <C-k> :move-2<cr>
@@ -127,16 +127,6 @@ augroup lisp
 	autocmd FileType lisp.clojure.scheme RainbowParentheses
 augroup END
 let g:paredit_smartjump =1
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " emmet
 let g:user_emmet_install_global=0
